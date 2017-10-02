@@ -1,0 +1,3 @@
+https://hackaday.com/tag/raspberry-pi-camera/
+https://arxiv.org/abs/1708.07887
+https://en.wikipedia.org/wiki/OpenCV
