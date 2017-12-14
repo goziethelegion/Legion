@@ -1,0 +1,27 @@
+Step 1 - Signing up user
+So the Phone camera takes a picture of the person when the user clicks on the android button. 
+
+OR
+
+The PiCamera takes a picture of the user when the user clicks on the android button.
+The problem is that the user doesn't take the picture, the user initializes the PiCamera to take a picture.
+The PiCamera could take a picture when it detects a face.
+
+Step 2 - Bluetooth Connection
+Using the Phone's camera, once the user takes a picture that is acceptable to himself/herself,it is saved in jpeg format.
+The picture is stored immediately in the database along with the other user info. Sign up is complete.
+The problem comes up when the user might attempt to login. The PiCamera and the Phone Camera have different resolutions.
+
+OR
+
+Using the PiCamera, once a picture is taken. It is saved locally and overwritten whenever a new picture is taken.
+Before the picture is overwritten, it is sent to the android application after a pairing through bluetooth.
+The jpeg picture format is stored in the database along with other user info. Sign up is complete.
+
+Step 3 - Facial Recognition
+User tries to sign in using facial/fingerprint. The Picamera is automatic detection on the signup page.
+So when the user optionally chooses to use the 2f scanner, the recognition process is initialized.
+When the camera detects a face or fingerprint, it saves it locally again in jpeg format.
+
+Step 4 - Database Verification
+The saved picture is sent to the database. This time it is sent for verification.
