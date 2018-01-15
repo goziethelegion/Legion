@@ -25,3 +25,25 @@ When the camera detects a face or fingerprint, it saves it locally again in jpeg
 
 Step 4 - Database Verification
 The saved picture is sent to the database. This time it is sent for verification.
+
+						2f Scanner Maximization
+Currently, it has 3 programs that uses video capture for signing up a face (facial detection), training the program for 
+facial recognition and facial recognition respectively. It is to be redesigned to use only 2 programs.
+						
+						First Program (Facial Detection/Signing up User)
+This program uses video capture for signing up the user, capturing all the user angles and saving it into the database.
+
+Asks user for the username (Must be similar to the one used for signing up on android.)
+If accurate, it continues by saving each of the user captured image with the username prefixed & number increment.
+
+						Second Program (Training/Facial Recognition)
+This program would first train the program for facial recognition and then use image capture to capture the image of the
+user. Next, it prompts the user to enter username again, makes a connection with the database to retrieve pictures stored 
+under that name. Next it loops through the images in the folder and finds a match. If match is found, it communicates with
+the android software that the login was successful.
+
+						Database Setup
+The database is already setup with user info, so i'm gonna be creating another table for the captured pictures and have it
+saved on the database. Since the camera captures different facial angles of the user, the table is to created in a way that
+allows all the picture to be saved in a folder. So that when the user is trying to use the facial recognition, it loops 
+through all the pictures in the folder.
