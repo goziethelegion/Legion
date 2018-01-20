@@ -42,7 +42,7 @@
 <h2 id="design">Designing 2F Scanner</h2>
 The pi-camera is a really fragile technology, so a case was required to protect it. Using CorelDraw and accurate <a href="https://www.raspberrypi-spy.co.uk/2013/05/pi-camera-module-mechanical-dimensions/">schematics</a>, a design was produced. Find below a preview of the design and link to download CorelDraw and the schematic:<br/>
 <img src="thumbnail.png" alt="2f scanner design"><br/>
-<img src="2fscanner.jpg" alt="2f scanner" width="360dp" height="200dp"><br/>
+<img src="2fscanner.jpg" alt="2f scanner" width="360dp" height="280dp"><br/>
 <a href="https://www.coreldraw.com/en/pages/free-download/">CorelDraw</a><br/>
 <a href="https://github.com/goziethelegion/Legion/tree/master/Pi2CaseHumber">Schematics</a><br/>
 
