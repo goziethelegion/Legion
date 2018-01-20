@@ -13,7 +13,7 @@
 <li>Facial Recognition</li>
 <li></li></ol>
 ### Introduction:<br />
-2f Scanner is a device built with the Raspberry-pi 3 to perform the function of facial recognition for security purposes. It's an optional tool that could be used for biometric verification of a registered user in the android mobile application, GBMstats. OpenCV, which stands for Open Computer Vision, was utilized in performing facial detection and recognition. OpenCV is an open source library originally developed by Intel that contains functions focusing on real-time computer vision. For inclined technology students, It should take about 5-7 days to successfully complete these build instructions based on their commitment.
+2f Scanner is a device built with the Raspberry-pi 3 to perform the function of facial recognition for security purposes. It's an optional tool that could be used for biometric verification of a registered user in the android mobile application, GBMstats. OpenCV, which stands for Open Computer Vision, was utilized in performing facial detection and recognition. OpenCV is an open source library originally developed by Intel that contains functions focusing on real-time computer vision. For inclined technology students, It should take about 5-7 days to successfully complete these build instructions based on their commitment.<br />
 ### Items Required:<br />
 •	Pi-camera<br />
 •	Raspberry-pi<br />
@@ -38,8 +38,10 @@
 •	Carefully follow the steps on the link: https://www.learnopencv.com/install-opencv3-on-ubuntu/ <br />
 
 ### Designing 2F Scanner<br />
-The pi-camera is really fragile, so a covering was required to protect it. Using CorelDraw and accurate pi-camera schematics, a design was produced. Find below a preview of the design and link to download it:<br/>
+The pi-camera is a really fragile technology, so a case was required to protect it. Using CorelDraw and accurate <a href="https://www.raspberrypi-spy.co.uk/2013/05/pi-camera-module-mechanical-dimensions/">schematics</a>, a design was produced. Find below a preview of the design and link to download CorelDraw and the schematic:<br/>
 <img src="thumbnail.png" alt="2f scanner design">
+<a href="https://www.coreldraw.com/en/pages/free-download/">CorelDraw</a>
+<a href="https://github.com/goziethelegion/Legion/tree/master/Pi2CaseHumber">Schematics</a>
 
 ### Setting up V4L2 to enable video Recording<br />
 The pi-camera is mainly designed for camera capture, so video recording is a quite complex. You would have to install V4L2 to enable video recording. Follow the steps below to successful install v4L2 and enable it. <br />
