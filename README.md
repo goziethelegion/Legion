@@ -41,9 +41,10 @@
 
 ### Designing 2F Scanner<br />
 The pi-camera is a really fragile technology, so a case was required to protect it. Using CorelDraw and accurate <a href="https://www.raspberrypi-spy.co.uk/2013/05/pi-camera-module-mechanical-dimensions/">schematics</a>, a design was produced. Find below a preview of the design and link to download CorelDraw and the schematic:<br/>
-<img src="thumbnail.png" alt="2f scanner design">
-<a href="https://www.coreldraw.com/en/pages/free-download/">CorelDraw</a>
-<a href="https://github.com/goziethelegion/Legion/tree/master/Pi2CaseHumber">Schematics</a>
+<img src="thumbnail.png" alt="2f scanner design"><br/>
+<img src="2fscanner.jpg" alt="2f scanner"><br/>
+<a href="https://www.coreldraw.com/en/pages/free-download/">CorelDraw</a><br/>
+<a href="https://github.com/goziethelegion/Legion/tree/master/Pi2CaseHumber">Schematics</a><br/>
 
 ### Setting up V4L2 to enable video Recording<br />
 The pi-camera is mainly designed for camera capture, so video recording is a quite complex. You would have to install V4L2 to enable video recording. Follow the steps below to successful install v4L2 and enable it. <br />
@@ -81,15 +82,25 @@ v4l2-ctl --set-ctrl video_bitrate=10000000<br />
 #### Relevant files and link:
 <ul>
 <a href="https://github.com/goziethelegion/Legion/blob/master/datasetter.py"><li>datasetter.py</li></a>
-<li></li>
+<a href="https://github.com/goziethelegion/Legion/blob/master/haarcascade_frontalface_default.xml"><li>haarcascade_frontalface_default.xml</li></a>
 </ul>
 
 ### Train the images:<br />
 •	Next, train the images captured in the dataset folder by running the program trainer.py – 	python trainer.py<br />
+#### Relevant files and link:
+<ul>
+<a href="https://github.com/goziethelegion/Legion/blob/master/trainer.py"><li>trainer.py</li></a><br/>
+<a href="https://github.com/goziethelegion/Legion/blob/master/haarcascade_frontalface_default.xml"><li>haarcascade_frontalface_default.xml</li></a><br/>
+</ul>
 
 ### Facial Recognition:<br />
 •	Still in the same directory, run the program detector.py<br />
 python detector.py<br />
 •	Ensure the background lighting is good.<br />
 •	Hold up 2f scanner to your face level and the camera should recognize your face with the name you entered on top of your picture frame.<br />
+#### Relevant files and link:
+<ul>
+<a href="https://github.com/goziethelegion/Legion/blob/master/detector.py"><li>detector.py</li></a>
+<a href="https://github.com/goziethelegion/Legion/blob/master/haarcascade_frontalface_default.xml"><li>haarcascade_frontalface_default.xml</li></a>
+</ul>
 
