@@ -2,18 +2,18 @@
 ## Chigozie Aham <br />
 ## Table of Contents<br />
 <ol>
-<li>Introduction</li>
-<li>Items required</li>
-<li>Installing Raspbian OS</li>
-<li>Installing OpenCV and Python</li>
-<li>Designing 2F Scanner:</li>
-<li>Setting up V4L2 to enable video Recording</li>
-<li>Facial detection</li>
-<li>Train the images</li>
-<li>Facial Recognition</li>
-<li></li></ol>
+<a href="#intro"><li>Introduction</li></a>
+<a href="#items"><li>Items required</li></a>
+<a href="#OS"><li>Installing Raspbian OS</li></a>
+<a href="#opencv"><li>Installing OpenCV and Python</li></a>
+<a href="#design"><li>Designing 2F Scanner:</li></a>
+<a href="#v4l2"><li>Setting up V4L2 to enable video Recording</li></a>
+<a href="#detection"><li>Facial detection</li></a>
+<a href="#train"><li>Train the images</li></a>
+<a href="#recog"><li>Facial Recognition</li></a>
+</ol>
 
-### Introduction:<br />
+<h2 id="intro">Introduction:</h2>
 2f Scanner is a device built with the Raspberry-pi 3 to perform the function of facial recognition for security purposes. It's an optional tool that could be used for biometric verification of a registered user in the android mobile application, GBMstats. OpenCV, which stands for Open Computer Vision, was utilized in performing facial detection and recognition. OpenCV is an open source library originally developed by Intel that contains functions focusing on real-time computer vision. For inclined technology students, It should take about 5-7 days to successfully complete these build instructions based on their commitment.<br />
 
 ### Items Required:<br />
@@ -89,7 +89,7 @@ v4l2-ctl --set-ctrl video_bitrate=10000000<br />
 •	Next, train the images captured in the dataset folder by running the program trainer.py – 	python trainer.py<br />
 #### Relevant files and link:
 <ul>
-<a href="https://github.com/goziethelegion/Legion/blob/master/trainer.py"><li>trainer.py</li></a><br/>
+<a href="https://github.com/goziethelegion/Legion/blob/master/trainer.py"><li>trainer.py</li></a>
 <a href="https://github.com/goziethelegion/Legion/blob/master/haarcascade_frontalface_default.xml"><li>haarcascade_frontalface_default.xml</li></a><br/>
 </ul>
 
