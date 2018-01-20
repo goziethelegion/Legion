@@ -1,5 +1,19 @@
 # 2F Scanner Build Instructions <br />
-## Chigozie Aham – N01111181 <br />
+## Chigozie Aham <br />
+## Table of Contents<br />
+<ol>
+<li>Introduction</li>
+<li>Items required</li>
+<li>Installing Raspbian OS</li>
+<li>Installing OpenCV and Python</li>
+<li>Designing 2F Scanner:</li>
+<li>Setting up V4L2 to enable video Recording</li>
+<li>Facial detection</li>
+<li>Train the images</li>
+<li>Facial Recognition</li>
+<li></li></ol>
+### Introduction:<br />
+2f Scanner is a device built with the Raspberry-pi 3 to perform the function of facial recognition for security purposes. It's an optional tool that could be used for biometric verification of a registered user in the android mobile application, GBMstats. OpenCV, which stands for Open Computer Vision, was utilized in performing facial detection and recognition. OpenCV is an open source library originally developed by Intel that contains functions focusing on real-time computer vision. For inclined technology students, It should take about 5-7 days to successfully complete these build instructions based on their commitment.
 ### Items Required:<br />
 •	Pi-camera<br />
 •	Raspberry-pi<br />
@@ -22,6 +36,10 @@
 
 ### Installing OpenCV and Python:<br />
 •	Carefully follow the steps on the link: https://www.learnopencv.com/install-opencv3-on-ubuntu/ <br />
+
+### Designing 2F Scanner<br />
+The pi-camera is really fragile, so a covering was required to protect it. Using CorelDraw and accurate pi-camera schematics, a design was produced. Find below a preview of the design and link to download it:
+<img src="thumbnail.png" alt="2f scanner design">
 
 ### Setting up V4L2 to enable video Recording<br />
 The pi-camera is mainly designed for camera capture, so video recording is a quite complex. You would have to install V4L2 to enable video recording. Follow the steps below to successful install v4L2 and enable it. <br />
@@ -56,6 +74,11 @@ v4l2-ctl --set-ctrl video_bitrate=10000000<br />
 •	Ensure the background lighting is good.<br />
 •	Tilt your head back and forth (preferably around) to enable the camera to capture all your facial angles.<br />
 •	The video frame would only exit when 20 images has been successfully captured and stored in the dataset folder. <br />
+#### Relevant files and link:
+<ul>
+<a href="https://github.com/goziethelegion/Legion/blob/master/datasetter.py"><li>datasetter.py</li></a>
+<li></li>
+</ul>
 
 ### Train the images:<br />
 •	Next, train the images captured in the dataset folder by running the program trainer.py – 	python trainer.py<br />
