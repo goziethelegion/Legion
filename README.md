@@ -38,7 +38,7 @@
 •	Carefully follow the steps on the link: https://www.learnopencv.com/install-opencv3-on-ubuntu/ <br />
 
 ### Designing 2F Scanner<br />
-The pi-camera is really fragile, so a covering was required to protect it. Using CorelDraw and accurate pi-camera schematics, a design was produced. Find below a preview of the design and link to download it:
+The pi-camera is really fragile, so a covering was required to protect it. Using CorelDraw and accurate pi-camera schematics, a design was produced. Find below a preview of the design and link to download it:<br/>
 <img src="thumbnail.png" alt="2f scanner design">
 
 ### Setting up V4L2 to enable video Recording<br />
