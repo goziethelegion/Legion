@@ -12,8 +12,10 @@
 <li>Train the images</li>
 <li>Facial Recognition</li>
 <li></li></ol>
-## Introduction:<br />
+
+### Introduction:<br />
 2f Scanner is a device built with the Raspberry-pi 3 to perform the function of facial recognition for security purposes. It's an optional tool that could be used for biometric verification of a registered user in the android mobile application, GBMstats. OpenCV, which stands for Open Computer Vision, was utilized in performing facial detection and recognition. OpenCV is an open source library originally developed by Intel that contains functions focusing on real-time computer vision. For inclined technology students, It should take about 5-7 days to successfully complete these build instructions based on their commitment.<br />
+
 ### Items Required:<br />
 •	Pi-camera<br />
 •	Raspberry-pi<br />
